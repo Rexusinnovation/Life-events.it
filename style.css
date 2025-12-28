@@ -78,7 +78,7 @@ nav ul li a:hover::after {
   height: 100%;
   object-fit: cover;
   z-index: 1;
-  filter: brightness(0.4) contrast(1.1) saturate(1.1);
+  filter: brightness(0.65) contrast(1.05) saturate(1.15);
 }
 
 .hero::after {
