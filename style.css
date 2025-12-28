@@ -17,7 +17,10 @@ nav {
   justify-content: space-between;
   align-items: center;
   padding: 1rem 3rem;
-  background-color: #0a0a0a;
+  background-color: rgba(0,0,0,0.8);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 nav .logo img {
   width: 160px;
@@ -45,7 +48,7 @@ nav ul li a:hover {
   align-items: center;
   height: 80vh;
   text-align: center;
-  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('hero_background.jpg') no-repeat center center/cover;
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('hero_background.jpg') no-repeat center center/cover;
 }
 .hero h1 {
   font-family: 'Poppins', sans-serif;
@@ -67,10 +70,24 @@ nav ul li a:hover {
   color: #000;
 }
 
+/* COUNTDOWN */
+#countdown-container {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #ff0080;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: 700;
+  z-index: 999;
+}
+
 /* EVENTI */
 #eventi {
   padding: 4rem 3rem;
   text-align: center;
+  background: url('event_background.jpg') no-repeat center center/cover;
 }
 #eventi h2 {
   font-size: 2.5rem;
@@ -84,7 +101,7 @@ nav ul li a:hover {
   gap: 2rem;
 }
 .event-card {
-  background-color: #1a1a1a;
+  background-color: rgba(26,26,26,0.9);
   padding: 1rem;
   border-radius: 10px;
   width: 300px;
@@ -123,17 +140,29 @@ nav ul li a:hover {
 #chi-siamo {
   padding: 4rem 3rem;
   text-align: center;
+  background: url('chi_siamo_background.jpg') no-repeat center center/cover;
 }
 #chi-siamo h2 {
   font-size: 2.5rem;
   margin-bottom: 1.5rem;
   color: #ff0080;
 }
+#chi-siamo .chi-siamo-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+#chi-siamo img {
+  width: 300px;
+  border-radius: 10px;
+}
 
 /* CONTATTI */
 #contatti {
   padding: 4rem 3rem;
   text-align: center;
+  background-color: #111;
 }
 #contatti h2 {
   font-size: 2.5rem;
@@ -169,5 +198,8 @@ footer {
   }
   .hero h1 {
     font-size: 2rem;
+  }
+  #chi-siamo .chi-siamo-content {
+    flex-direction: column;
   }
 }
