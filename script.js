@@ -1,15 +1,6 @@
 // Countdown per l'evento
 const countdownDate = new Date("Dec 31, 2025 00:00:00").getTime();
-const countdownElem = document.createElement('div');
-countdownElem.style.position = 'fixed';
-countdownElem.style.top = '10px';
-countdownElem.style.right = '10px';
-countdownElem.style.padding = '10px 20px';
-countdownElem.style.backgroundColor = '#ff0080';
-countdownElem.style.color = '#fff';
-countdownElem.style.fontWeight = '700';
-countdownElem.style.borderRadius = '5px';
-document.body.appendChild(countdownElem);
+const countdownElem = document.getElementById('countdown');
 
 const countdown = setInterval(() => {
   const now = new Date().getTime();
