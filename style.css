@@ -190,3 +190,25 @@ nav ul li a:hover::after {
     align-items: center;
   }
 }
+
+.ticket-btn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.9rem 2.4rem;
+  font-size: 1.1rem;
+  font-weight: 700;
+  text-decoration: none;
+  color: #ffffff;
+  border-radius: 50px;
+
+  background: linear-gradient(90deg, #ff2aa1, #9b5cff, #00eaff);
+  box-shadow: 0 0 20px rgba(0,234,255,0.45);
+
+  transition: all 0.3s ease;
+}
+
+.ticket-btn:hover {
+  transform: translateY(-3px) scale(1.03);
+  box-shadow: 0 0 35px rgba(255,42,161,0.7);
+  background: linear-gradient(90deg, #00eaff, #9b5cff, #ff2aa1);
+}
