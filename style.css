@@ -212,3 +212,45 @@ nav ul li a:hover::after {
   box-shadow: 0 0 35px rgba(255,42,161,0.7);
   background: linear-gradient(90deg, #00eaff, #9b5cff, #ff2aa1);
 }
+
+/* COUNTDOWN */
+
+#countdown-container {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  z-index: 999;
+}
+
+.countdown-box {
+  padding: 1rem 1.8rem;
+  border-radius: 18px;
+  background: linear-gradient(135deg, #ff2aa1, #9b5cff, #00eaff);
+  color: #ffffff;
+  font-weight: 800;
+  text-align: center;
+  box-shadow: 0 0 30px rgba(0,234,255,0.6);
+  animation: glowPulse 2.5s infinite;
+}
+
+.countdown-box span {
+  display: block;
+  font-size: 1.4rem;
+  letter-spacing: 1px;
+}
+
+.countdown-box small {
+  display: block;
+  font-size: 0.75rem;
+  opacity: 0.85;
+  margin-top: 0.2rem;
+  text-transform: uppercase;
+}
+
+/* Effetto pulse */
+@keyframes glowPulse {
+  0% { box-shadow: 0 0 20px rgba(0,234,255,0.4); }
+  50% { box-shadow: 0 0 40px rgba(255,42,161,0.8); }
+  100% { box-shadow: 0 0 20px rgba(0,234,255,0.4); }
+}
+
