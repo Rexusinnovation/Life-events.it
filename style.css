@@ -25,6 +25,7 @@ nav {
   top: 0;
   z-index: 1000;
   border-bottom: 1px solid rgba(255,255,255,0.08);
+  flex-wrap: nowrap; /* ✅ FIX CHIAVE DEFINITIVA */
 }
 
 nav .logo img {
@@ -181,7 +182,7 @@ nav ul li a:hover::after {
   }
 }
 
-/* ✅ FIX DEFINITIVO DESKTOP (NON TOCCA IL MOBILE) */
+/* DESKTOP (GIÀ PRESENTE, VA BENE) */
 @media (min-width: 769px) {
   nav ul {
     flex-direction: row;
