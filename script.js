@@ -1,5 +1,5 @@
 // Countdown per l'evento
-const countdownDate = new Date("Dec 31, 2025 00:00:00").getTime();
+const countdownDate = new Date("Dec 31, 2025 23:59:59").getTime();
 const countdownElem = document.getElementById('countdown');
 
 const countdown = setInterval(() => {
